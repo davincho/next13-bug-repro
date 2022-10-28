@@ -4,7 +4,7 @@ import { getBaseUrl }  from '../utils'
 
 async function getData() {
   const dataBuffer = await fetch(
-    `${getBaseUrl()}/lock.yaml`
+    `${getBaseUrl()}/lock.yaml`, { cache: 'no-store' }
   );
 
   const blobContent = await dataBuffer.text();

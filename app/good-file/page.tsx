@@ -4,7 +4,7 @@ import { getBaseUrl }  from '../utils'
 
 async function getData() {
   const dataBuffer = await fetch(
-    `${getBaseUrl()}/vercel.svg`
+    `${getBaseUrl()}/vercel.svg`, { cache: 'no-store' }
   );
 
   const blobContent = await dataBuffer.text();
