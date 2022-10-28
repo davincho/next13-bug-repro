@@ -1,3 +1,4 @@
+import styles from './../page.module.css'
 import { getBaseUrl }  from '../utils'
 
 
@@ -12,11 +13,16 @@ async function getData() {
 }
 
 export default async function Home() {
-  await getData()
+  const data = await getData()
 
   return (
-    <div>  
-      Bad File
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <h1 className={styles.title}>Bad File</h1>
+        <div className={styles.grid}>
+          {data}
+        </div>
+      </main>
     </div>
   )
 }

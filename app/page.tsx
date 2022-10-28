@@ -15,12 +15,12 @@ export default async function Home() {
 
         <div className={styles.grid}>
           <Link href="/good-file" className={styles.card}>
-            <h2>Good File Route &rarr;</h2>
+            <h2>Good File &rarr;</h2>
           </Link>
 
 
           <Link href="/bad-file" className={styles.card}>
-            <h2>Bad File Route &rarr;</h2>
+            <h2>Bad File &rarr;</h2>
           </Link>
         </div>
       </main>
